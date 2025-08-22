@@ -1,0 +1,176 @@
+# =============================================================================
+# AI Career Copilot - Complete Dependencies
+# =============================================================================
+# Install with: pip install -r requirements.txt
+# 
+# This file consolidates all dependencies for the AI Career Copilot system
+# including core functionality, Azure services, security, and development tools.
+
+# =============================================================================
+# Core Framework Dependencies
+# =============================================================================
+
+# Google ADK Framework
+google-adk>=0.0.3
+
+# Google AI Platform
+google-genai>=1.9.0
+langchain-google-genai>=2.0.10
+
+# Pydantic for data validation
+pydantic>=2.10.6
+
+# =============================================================================
+# Web Framework & Server
+# =============================================================================
+
+# FastAPI for REST API
+fastapi>=0.104.0
+
+# Starlette for ASGI applications
+starlette>=0.46.1
+
+# Uvicorn ASGI server
+uvicorn>=0.34.0
+
+# SSE (Server-Sent Events) support
+sse-starlette>=2.2.1
+httpx-sse>=0.4.0
+
+# =============================================================================
+# HTTP Client & Communication
+# =============================================================================
+
+# HTTP client for API calls
+httpx>=0.28.1
+
+# =============================================================================
+# Database & Persistence
+# =============================================================================
+
+# MongoDB async driver
+motor>=3.3.0
+
+# =============================================================================
+# Security & Authentication
+# =============================================================================
+
+# JWT Authentication
+PyJWT>=2.8.0
+jwcrypto>=1.5.6
+
+# Cryptography
+cryptography>=41.0.0
+
+# Password Hashing
+bcrypt>=4.0.0
+passlib>=1.7.4
+
+# Input Validation and Sanitization
+bleach>=6.0.0
+html5lib>=1.1
+lxml>=4.9.0
+
+# Rate Limiting
+slowapi>=0.1.8
+
+# Security Headers and Middleware
+secure>=0.3.0
+
+# Encryption
+pycryptodome>=3.18.0
+
+# Additional Security Utilities
+python-multipart>=0.0.6
+itsdangerous>=2.1.2
+
+# =============================================================================
+# Azure Service Dependencies
+# =============================================================================
+
+# Azure AI Search - For RAG capabilities and vector search
+azure-search-documents>=11.4.0
+
+# Azure Blob Storage - For file storage and artifact management
+azure-storage-blob>=12.19.0
+
+# Azure Service Bus - For async messaging and event processing
+azure-servicebus>=7.11.0
+
+# Azure Core - Common Azure functionality
+azure-core>=1.29.0
+
+# Azure Identity - For managed identity and service principal auth
+azure-identity>=1.15.0
+
+# =============================================================================
+# UI Framework
+# =============================================================================
+
+# Mesop UI framework
+mesop>=0.0.50
+
+# Streamlit (if needed for additional UI components)
+streamlit>=1.44.0
+
+# =============================================================================
+# Command Line Interface
+# =============================================================================
+
+# Click for CLI
+click>=8.1.8
+asyncclick>=8.1.8
+
+# =============================================================================
+# Configuration & Environment
+# =============================================================================
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# =============================================================================
+# Logging & Monitoring
+# =============================================================================
+
+# Structured logging
+structlog>=23.1.0
+python-json-logger>=2.0.7
+
+# =============================================================================
+# Development & Testing Dependencies
+# =============================================================================
+
+# Testing framework
+pytest>=8.3.5
+pytest-mock>=3.14.0
+
+# Code quality and formatting
+ruff>=0.11.2
+black>=23.0.0
+isort>=5.12.0
+
+# Type checking
+mypy>=1.7.0
+
+# Security testing
+bandit>=1.7.5
+safety>=2.3.0
+
+# =============================================================================
+# Additional Utilities
+# =============================================================================
+
+# Note: asyncio is a built-in Python module, no need to install separately
+
+# =============================================================================
+# Version Constraints
+# =============================================================================
+# 
+# Python version: >=3.12
+# 
+# Note: Some packages may have additional version constraints
+# based on compatibility requirements. If you encounter version
+# conflicts, you may need to adjust specific package versions.
+#
+# For production deployment, consider pinning exact versions
+# to ensure reproducible builds.

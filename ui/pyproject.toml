@@ -1,0 +1,42 @@
+[project]
+name = "a2a-ui"
+version = "0.1.0"
+description = "AI Career Copilot Demo UI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mesop>=0.0.50",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.7.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+# Local development dependencies
+[tool.uv]
+dev-dependencies = [
+    "a2a_samples = { path = \"../june\", editable = true }"
+]
